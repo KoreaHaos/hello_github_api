@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+
+    <meta source_of_info="http://stackoverflow.com/questions/9209213/float-a-gif-image-over-a-html-page">
+    <meta source="http://jsfiddle.net/SzPc3/">
+    <meta source="http://jsfiddle.net/davidThomas/3XHu2/">
+
+    <link rel="stylesheet" type="text/css" href="css/haoStyle.css">
+
+    <script type="text/javascript" src="js/jsc3d.js"></script>
+    <script type="text/javascript" src="js/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="js/jsc3d.touch.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <title>hello_git_api</title>
+</head>
+
+<body>
+    <!-- This line makes the entire browser pane clickable but does not change the cursor. -->
+    <a href="pgs/haos_github_api_example.html" style="cursor: url(pgs/haos_github_api_example.html), default;" target="_blank">
+
+<!--
+-->
+        <img src="../img/github-logo.png" class="fullpage_background_image">
+
+        <div id="page_contents">
+            <canvas id="object_canvas" style="width: 99%; height: auto;"></canvas>
+        </div>
+
+        <script type="text/javascript" src="js/display_object_w_jsc3d.js"></script>
+
+        <!-- This bit allows the overlay image -->
+        <!-- This was sourced from links found at : http://stackoverflow.com/questions/9209213/float-a-gif-image-over-a-html-page -->
+        <div id="horizon">
+            <div id="content">
+                <div class="overlayed_message">
+                </div>
+            </div>
+        </div>
+    </a>
+</body>
+
+</html>
