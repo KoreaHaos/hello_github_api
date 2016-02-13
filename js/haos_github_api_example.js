@@ -12,7 +12,6 @@ function update_dom() {
   if (user_dom_should_work_with) {
     client_modded_default = true;
     view_needs_update = true;
-    //console_display_value("client_modded_default!");
   }
 
   // Then this part of the code manages the text input field.
@@ -139,8 +138,6 @@ function clear_input_field() {
 }
 
 function update_api_calls_remain_view() {
-
-  //console_display_value("update_api_calls_remain_view called!")
   var github_rate_limit_url_string = 'https://api.github.com/rate_limit';
 
   requestJSON(github_rate_limit_url_string, function(json) {
@@ -163,8 +160,6 @@ function update_api_calls_remain_view() {
 function console_display_value(val_in) {
   console.log(val_in);
 }
-
-// This was the bit copied that i still need to figure out more fully.
 
 function requestJSON(url, callback) {
   $.ajax({
@@ -293,7 +288,6 @@ function we_need_to_update_default_user_object() {
 
 function manage_user_input_field() {
 
-  // ToDo Figure out what needs to be done to clean any input and make it safe/secure.
   var user_dom_should_work_with = $('#ghusername').val();
 
   // If the user/client has entered text in the field, we note that.
