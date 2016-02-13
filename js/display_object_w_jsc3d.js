@@ -19,14 +19,14 @@ var rotationLag = 10;
 
 function displayPartOneOfMessageToUser() {
     console.log("First Bit!");
-    var imgPath = "../img/clickTrans.gif";
+    var imgPath = "img/clickTrans.gif";
     loadImage(imgPath);
     displayedFirstWord = true;
 }
 
 function displayPartTwoOfMessageToUser() {
     console.log("Second Bit!");
-    var imgPath = "../img/as_you_pleaseTrans.gif";
+    var imgPath = "img/as_you_pleaseTrans.gif";
     loadImage(imgPath);
     displayedFinalWords = true;
 
@@ -62,8 +62,8 @@ function show_viewer(xRotIn, yRotIn, zRotIn) {
 
     viewer.setParameter('RenderMode', 'texturesmooth');
 
-    viewer.setBackgroudImageFromUrl('../img/GitCatsMashUp.png');
-    viewer.setParameter('SceneUrl', '../obj/git_hub_logo.obj');
+    viewer.setBackgroudImageFromUrl('img/GitCatsMashUp.png');
+    viewer.setParameter('SceneUrl', 'obj/git_hub_logo.obj');
     
     viewer.init();
 
