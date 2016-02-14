@@ -6,7 +6,7 @@ $('#basicDataButton').on('click', function(wtf_is_this) {
 
 function update_dom() {
 
-  var user_dom_should_work_with = $('textInputForGitHubUserName').val();
+  var user_dom_should_work_with = $('inputGitHubUserField').val();
 
   console.log("user_dom_should_work_with = " + user_dom_should_work_with)
   // If the user/client has entered text in the field, we note that.
@@ -123,21 +123,21 @@ function update_input_text_field(user_to_work_with) {
   //var valueInTextInputField = 
   if (user_to_work_with) {
     if (client_modded_default) {
-      document.getElementsByName('usersGitHubUserFieldInput')[0].placeholder = user_to_work_with;
+      document.getElementsByName('textInputForGitHubUserName')[0].placeholder = user_to_work_with;
 
     }
     else {
-      document.getElementsByName('usersGitHubUserFieldInput')[0].placeholder = 'Enter a GitHub username here. Default : ' + user_to_work_with;
+      document.getElementsByName('textInputForGitHubUserName')[0].placeholder = 'Enter a GitHub username here. Default : ' + user_to_work_with;
     }
   }
   else {
-    document.getElementsByName('usersGitHubUserFieldInput')[0].placeholder = 'Enter a GitHub username here.';
+    document.getElementsByName('textInputForGitHubUserName')[0].placeholder = 'Enter a GitHub username here.';
   }
   clear_input_field();
 }
 
 function clear_input_field() {
-  document.getElementsByName('usersGitHubUserFieldInput').value = '';
+  document.getElementsByName('textInputForGitHubUserName').value = '';
 }
 
 function update_api_calls_remain_view() {
