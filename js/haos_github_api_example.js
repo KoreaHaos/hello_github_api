@@ -8,6 +8,7 @@ function update_dom() {
 
   var user_dom_should_work_with = $('#usersGitHubUserFieldInput').val();
 
+  console.log("user_dom_should_work_with = " + user_dom_should_work_with)
   // If the user/client has entered text in the field, we note that.
   if (user_dom_should_work_with) {
     client_modded_default = true;
