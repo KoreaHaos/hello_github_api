@@ -6,7 +6,7 @@ $('#basicDataButton').on('click', function(wtf_is_this) {
 
 function update_dom() {
 
-  var user_dom_should_work_with = $('#ghusername').val();
+  var user_dom_should_work_with = $('#usersGitHubUserFieldInput').val();
 
   // If the user/client has entered text in the field, we note that.
   if (user_dom_should_work_with) {
@@ -118,23 +118,25 @@ function update_basic_user_data_view() {
 }
 
 function update_input_text_field(user_to_work_with) {
+  
+  //var valueInTextInputField = 
   if (user_to_work_with) {
     if (client_modded_default) {
-      document.getElementsByName('ghusername')[0].placeholder = user_to_work_with;
+      document.getElementsByName('usersGitHubUserFieldInput')[0].placeholder = user_to_work_with;
 
     }
     else {
-      document.getElementsByName('ghusername')[0].placeholder = 'Enter a GitHub username here. Default : ' + user_to_work_with;
+      document.getElementsByName('usersGitHubUserFieldInput')[0].placeholder = 'Enter a GitHub username here. Default : ' + user_to_work_with;
     }
   }
   else {
-    document.getElementsByName('ghusername')[0].placeholder = 'Enter a GitHub username here.';
+    document.getElementsByName('usersGitHubUserFieldInput')[0].placeholder = 'Enter a GitHub username here.';
   }
   clear_input_field();
 }
 
 function clear_input_field() {
-  document.getElementById('ghusername').value = '';
+  document.getElementsByName('usersGitHubUserFieldInput').value = '';
 }
 
 function update_api_calls_remain_view() {
@@ -184,17 +186,17 @@ $('#GitHubPagesButton').on('click', function(wtf_is_this) {
   manage_user_input_field();
   if (!default_user_object && default_username) {
     build_default_user_object(populate_pages_data);
-    $('#githubPagesData').html('<div id="loader"><img src="../gifs/waiting_black.gif" alt="loading..."></div>');
+    $('#githubPagesData').html('<div id="loader"><img src="gifs/waiting_black.gif" alt="loading..."></div>');
   }
   else {
     if (we_need_to_update_default_user_object()) {
       build_default_user_object(populate_pages_data);
-      $('#githubPagesData').html('<div id="loader"><img src="../gifs/waiting_black.gif" alt="loading..."></div>');
+      $('#githubPagesData').html('<div id="loader"><img src="gifs/waiting_black.gif" alt="loading..."></div>');
     }
     else {
       if (view_needs_update) {
         build_default_user_object(populate_pages_data);
-        $('#githubPagesData').html('<div id="loader"><img src="../gifs/waiting_black.gif" alt="loading..."></div>');
+        $('#githubPagesData').html('<div id="loader"><img src="gifs/waiting_black.gif" alt="loading..."></div>');
       }
     }
   }
@@ -288,7 +290,7 @@ function we_need_to_update_default_user_object() {
 
 function manage_user_input_field() {
 
-  var user_dom_should_work_with = $('#ghusername').val();
+  var user_dom_should_work_with = $('#usersGitHubUserFieldInput').val();
 
   // If the user/client has entered text in the field, we note that.
   if (user_dom_should_work_with) {
