@@ -1,0 +1,232 @@
+/* The repo list stylings */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.float_right {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.float_left {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.float_link_right {
+    float: right;
+    margin: auto;
+    padding-top: 20px;
+    padding-right: 5px;
+    text-decoration:none;
+    font-size: 16px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.float_link_left {
+    float: left;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 5px;
+    text-decoration:none;
+    font-size: 16px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.landscape_inline {
+    display: inline-block;
+    height: 60px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: #f2f2f2; color: grey;
+    margin: 2px;
+}
+
+.landscape_inline:hover {
+    border: 2px solid grey;
+    background-color: #e6e6e6; color: grey;
+}
+
+h2 {
+    font-size: 2.8em;
+    line-height: 1.55em;
+    margin-bottom: 4px;
+    color: #888;
+}
+
+#pageTitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#basicGitHubUserData {
+    text-align: center;
+}
+
+.queriedUsersAvatar {
+    display: inline-block;
+    border: 0px solid grey;
+}
+
+.queriedUsersRepoDataStats {
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    display: inline-block;
+    text-align: justify;
+    margin: 0px 0px 0px 10px;
+}
+
+#loader {
+  display: block;
+  width: 100px;
+  height: 100px;
+  opacity: 0.2;
+  margin: 0 auto;
+}
+
+
+body {
+    font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* page content styles */
+.queriedUsersContactInfo {
+  font-size: 0.75em;
+  color: grey;
+  font-style: italic;
+  text-decoration:none;
+}
+
+.queriedUsersNameOrHandle {
+  font-size: 0.85em;
+  color: grey;
+}
+
+.queryButton {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  background-color: #eaeaea;
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+  background-image: -ms-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  border-bottom-color: #c5c5c5;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.queryButton:hover {
+  background-color: #dadada;
+  background-image: -webkit-linear-gradient(#eaeaea, #dadada);
+  background-image: -moz-linear-gradient(#eaeaea, #dadada);
+  background-image: -ms-linear-gradient(top, #eaeaea, #dadada);
+  background-image: -o-linear-gradient(top, #eaeaea, #dadada);
+  background-image: linear-gradient(#eaeaea, #dadada);
+  border-color: #ccc #ccc #b5b5b5;
+}
+.queryButton:active {
+  background-color:#dadada;
+  background-image: none;
+  border-color: #b5b5b5;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+}
+
+/* input field */
+#ghusername {
+  display: block;
+  padding: 5px 8px;
+  font-size: 1.4em;
+  color: #666;
+  width: 550px;
+  margin-bottom: 15px;
+}
+
+.avatar_image {
+    height: 150px;
+    width: 150px;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 5px rgba(225,225, 225, 0.3);
+}
+
+/* full page background Source (example #2) : https://css-tricks.com/perfect-full-page-background-image/ */
+
+img.fullpage_background_image {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.the_top_left_corner {
+    position: fixed; /* forces the element to stay fixed in relation to the viewport */
+    top: 50%; /* sets the top of the image 50% of the page height */
+    left: 50%; /* sets the left side of the image 50% across the page */
+    margin-left: -100px; /* moves the image half of its own width to the left-side of the page */
+    margin-top: -93px; /* moves the image half its height 'up' the page */
+    box-shadow: 0.5em 0.5em 0.7em #333; /* to give the illusion of 'floating' */
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.fullpage_background_image {
+        left: 50%;
+        margin-left: -512px;
+
+        /* 50% */
+    }
+}
+
+
+#page_contents {
+    position: relative;
+    
+    width: 100% 100%;
+    padding: 5px;
+    background: white;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+
+#horizon {
+    color: black;
+    background-color: #00000;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+    visibility: visible;
+    display: block
+}

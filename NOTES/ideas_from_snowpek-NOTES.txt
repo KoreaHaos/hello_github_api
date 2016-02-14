@@ -1,0 +1,5 @@
+https://github.com/request/request
+https://github.com/request/request#oauth-signing
+http://browserify.org/
+https://github.com/oneuijs/You-Dont-Need-jQuery
+https://gist.github.com/hhsnopek/2abad2c18385bee1ee6d
