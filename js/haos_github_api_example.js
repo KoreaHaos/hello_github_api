@@ -6,7 +6,7 @@ $('#basicDataButton').on('click', function(wtf_is_this) {
 
 function update_dom() {
 
-  var user_dom_should_work_with = $('textInputForGitHubUserName').val();
+  var user_dom_should_work_with = $('inputGitHubUserField').val();
 
   console.log("user_dom_should_work_with = " + user_dom_should_work_with)
   // If the user/client has entered text in the field, we note that.
