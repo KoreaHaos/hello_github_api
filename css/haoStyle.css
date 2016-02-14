@@ -111,11 +111,27 @@ body {
   color: grey;
 }
 
+.centered_content {
+    
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center
+    margin-left: auto;
+    margin-right: auto
+    display: block;
+    */
+}
+
 .queryButton {
   display: inline-block;
-  padding: 8px 18px;
-  font-size: 14px;
+  width:25%;
+  padding: 5px 5px;
+  font-size: 12px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
   color: #444;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
@@ -156,7 +172,7 @@ body {
   padding: 5px 8px;
   font-size: 1.4em;
   color: #666;
-  width: 550px;
+  width: 75%;
   margin-bottom: 15px;
 }
 
@@ -205,9 +221,10 @@ img.fullpage_background_image {
 
 
 #page_contents {
+    /*
     position: relative;
-    
     width: 100% 100%;
+    */
     padding: 5px;
     background: white;
     -moz-box-shadow: 0 0 20px black;
@@ -229,4 +246,11 @@ img.fullpage_background_image {
     overflow: visible;
     visibility: visible;
     display: block
+}
+
+a.test_link {
+    font-size:3px;
+    color: grey;
+    text-decoration:none;
+    cursor:default;
 }
