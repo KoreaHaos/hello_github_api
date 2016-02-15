@@ -167,7 +167,7 @@ body {
 }
 
 /* input field */
-#ghusername {
+#inputGitHubUserField {
   display: block;
   padding: 5px 8px;
   font-size: 1.4em;

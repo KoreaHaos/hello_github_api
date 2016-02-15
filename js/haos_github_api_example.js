@@ -8,7 +8,6 @@ function update_dom() {
 
   var user_dom_should_work_with = $('#inputGitHubUserField').val();
 
-  console.log("user_dom_should_work_with = " + user_dom_should_work_with)
   // If the user/client has entered text in the field, we note that.
   if (user_dom_should_work_with) {
     client_modded_default = true;
@@ -48,6 +47,7 @@ function update_dom() {
   }
 
   // Clear the text field and change the placeholder.
+  console.log("user_dom_should_work_with = " + user_dom_should_work_with)
   update_input_text_field(user_dom_should_work_with);
 
   // Let the user know how many calls they have left.
@@ -291,7 +291,7 @@ function we_need_to_update_default_user_object() {
 
 function manage_user_input_field() {
 
-  var user_dom_should_work_with = $('#usersGitHubUserFieldInput').val();
+  var user_dom_should_work_with = $('#inputGitHubUserField').val();
 
   // If the user/client has entered text in the field, we note that.
   if (user_dom_should_work_with) {
