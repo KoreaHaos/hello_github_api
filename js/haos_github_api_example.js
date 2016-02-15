@@ -252,7 +252,7 @@ function make_github_pages_html_from_default_user_object() {
       return_html_string += '<a href = "';
       return_html_string += default_user_object.repos_api_data[i].repos_pages_url;
       return_html_string += '" target="_blank">'
-      return_html_string += '<img class="float_right" src="../img/star_icon_transparent.png" alt="gh-pages link" id="ghPagesLink">'
+      return_html_string += '<img class="float_right" src="img/star_icon_transparent.png" alt="gh-pages link" id="ghPagesLink">'
       return_html_string += '</a>'
     }
     return_html_string += "</div>";
