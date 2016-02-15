@@ -39,7 +39,7 @@ function update_dom() {
     // We should see if there is any change and if there is,"
     if (!(user_dom_should_work_with === default_username)) {
       get_basic_user_data(user_dom_should_work_with);
-      reset_pages_view();
+      clear_repos_list();
     }
   }
   else {
@@ -185,6 +185,7 @@ update_dom();
 
 $('#GitHubPagesButton').on('click', function(wtf_is_this) {
   manage_user_input_field();
+  
   if (!default_user_object && default_username) {
     build_default_user_object(populate_pages_data);
     $('#githubPagesData').html('<div id="loader"><img src="gifs/waiting_black.gif" alt="loading..."></div>');
@@ -317,7 +318,7 @@ function manage_user_input_field() {
   update_input_text_field(default_username);
 }
 
-function reset_pages_view() {
+function clear_repos_list() {
   $('#githubPagesData').html('<div id="pagesDataBlank"></div>');
 }
 
